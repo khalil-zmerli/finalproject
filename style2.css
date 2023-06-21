@@ -1,0 +1,544 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+	background-color: rgb(240, 104, 54);
+ 
+}
+.container {
+    width: 85vmin;
+    position:absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+ 
+    border: 20px solid #ffffff;
+    border-radius: 8px;
+    box-shadow: 10px 25px 30px rgba(30,30,200,0.3);
+    z-index: -1; /* Add this line to set a lower stacking order */
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    animation: slide 16s infinite;
+}
+
+
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+}
+img{
+
+    width: 500px;
+    height: 600px;
+}
+.full-page
+
+{
+
+    height: 100%;
+
+    width: 100%;
+
+  
+
+    position: absolute;
+
+}
+
+.sub-page
+
+{
+
+    width: 1266px;
+
+    height: 559px;
+
+    position: absolute;
+
+    background: url(bg1.jpg);
+
+    background-size: cover;
+
+    background-position: center;
+
+    left: 50px;
+
+    top: 50px;
+
+}
+
+.navigation-bar
+
+{
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 20px;
+
+    padding-left: 80px;
+
+    padding-right: 30px;
+
+    padding-top: 50px;
+
+
+}
+
+.logo
+
+{
+
+    position: fixed;
+
+    margin-top: 10px;
+
+}
+
+.logo a
+
+{
+
+    text-decoration: none;
+
+    color: white;
+
+    font-size: 30px;
+
+}
+
+nav
+
+{
+
+    flex: 1;
+
+    position: fixed;
+
+    right: 0;
+
+}
+
+nav ul 
+
+{
+
+    display: inline-block;
+
+    list-style: none;
+
+}
+
+nav ul li
+
+{
+
+    display: inline-block;
+
+    margin-right: 90px;
+
+    margin-top: 17px;
+
+}
+
+nav ul li a
+
+{
+
+    text-decoration: none;
+
+    font-size: 20px;
+
+    color: white;
+
+    font-family: sans-serif;
+
+}
+
+nav ul li a:hover
+
+{
+
+    color: coral;
+
+}
+
+.row
+
+{
+
+    display: flex;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+
+}
+
+.col-1
+
+{
+
+    flex-basis: 50%;
+
+    min-width: 300px;
+
+}
+
+.form-box
+
+{
+
+    width: 300px;
+
+	height: 400px;
+
+	position: relative;
+
+    top: 50px;
+
+    left: 120px;
+
+	background: rgba(0,0,0,0.6);
+
+}
+
+.main-heading
+
+{
+
+    color: orangered;
+
+    padding-bottom: 20px;
+
+}
+
+.form
+
+{
+
+	position: relative;
+
+	margin: 0 auto 100px;
+
+	padding: 45px;
+
+    text-align: center;
+
+}
+
+.form input
+
+{
+
+	font-family: sans-serif;
+
+	outline: none;
+
+    border: none;
+
+    border-bottom: 1px solid black;
+
+	width: 100%;
+
+	margin: 0 0 15px;
+
+	padding: 15px;
+
+	font-size: 14px;
+
+}
+
+.form button
+
+{
+
+	font-family: sans-serif;
+
+	width: 100%;
+
+    color: white;
+
+	font-size: 14px;
+
+	cursor: pointer;
+
+	padding: 15px;
+
+    border: none;
+
+    background: coral;
+
+}
+
+.form .message
+
+{
+
+    font-size: 12px;
+
+	margin: 15px 0 0;
+
+    color: white;
+
+}
+
+.form .message a
+
+{
+
+	color: rgb(255, 82, 20);
+
+	text-decoration: none;
+
+}
+
+.form .register-form{
+
+	display: none;
+
+}
+
+.defination
+
+{
+
+    text-align: left;
+
+    font-size: 30px;
+
+    color: white;
+
+    font-family: 'Kaushan Script', cursive;
+
+    padding-left: 60px;
+
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.full-page
+{
+    height:100%;
+	width: 100%;
+	background-color: rgb(240, 104, 54);
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+}
+.navbar
+{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 30px;
+    padding-top: 50px;
+}
+nav
+{
+    flex: 1;
+    text-align: right;
+}
+.link-button {
+    background-color: rgb(5, 189, 5);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 16px;
+  }
+nav ul 
+{
+    display: inline-block;
+    list-style: none;
+}
+nav ul li
+{
+    display: inline-block;
+    margin-right: 70px;
+}
+nav ul li a
+{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-family: sans-serif;
+}
+nav ul li button
+{
+    font-size: 20px;
+    color: white;
+    outline: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+nav ul li button:hover
+{
+    color: aqua;
+}
+nav ul li a:hover
+{
+    color: aqua;
+}
+a
+{
+    text-decoration: none;
+    color: rgb(135, 14, 55);
+    font-size: 28px;
+}
+#login-form
+{
+    display: none;
+}
+.form-box
+{
+    width:380px;
+	height:480px;
+	position:relative;
+	margin:2% auto;
+	background:rgba(0,0,0,0.3);
+	padding:10px;
+    overflow: hidden;
+}
+.button-box
+{
+	width:220px;
+	margin:35px auto;
+	position:relative;
+	box-shadow: 0 0 20px 9px #ff61241f;
+	border-radius: 30px;
+}
+.toggle-btn
+{
+	padding:10px 30px;
+	cursor:pointer;
+	background:transparent;
+	border:0;
+	outline: none;
+	position: relative;
+}
+#btn
+{
+	top: 0;
+	left:0;
+	position: absolute;
+	width: 110px;
+	height: 100%;
+	background: #F3C693;
+	border-radius: 30px;
+	transition: .5s;
+}
+.input-group-login
+{
+	top: 150px;
+	position:absolute;
+	width:280px;
+	transition:.5s;
+}
+.input-group-register
+{
+    top: 120px;
+	position:absolute;
+	width:280px;
+	transition:.5s;
+}
+.input-field
+{
+	width: 100%;
+	padding:10px 0;
+	margin:5px 0;
+	border-left:0;
+	border-top:0;
+	border-right:0;
+	border-bottom: 1px solid #999;
+	outline:none;
+	background: transparent;
+}
+.submit-btn
+{
+	width: 85%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	background: #F3C693;
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+}
+.check-box
+{
+	margin: 30px 10px 34px 0;
+}
+span
+{
+	color:#777;
+	font-size:12px;
+	bottom:68px;
+	position:absolute;
+}
+#login
+{
+	left:50px;
+}
+#login input
+{
+	color:white;
+	font-size:15;
+}
+#register
+{
+	left:450px;
+}
+#register input
+{
+	color:white;
+	font-size: 15;
+}
+.main-section {
+    width: 300px;
+    height: 200px;
+    background-color: coral;
+    text-align: center;
+    padding: 20px;
+}
+* {box-sizing:border-box}
