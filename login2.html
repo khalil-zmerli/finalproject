@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style2.css">
 </head>
 <body>
-    <div class="full-page">
+   
         <div class="sub-page">
             <div class="navigation-bar">
                 <div class="logo">
-                    <a href='photography.html'>The Closet</a>
+                    <a href='photography.html'>Shoes Center</a>
                 </div>
                 <nav>
                     <ul id='MenuItems'>
@@ -52,19 +53,52 @@
                 </div>
             </div>
         </div>
-    </div>
+  
     <script src='https://code.jquery.com/jquery-3.2.1.min.js'>
     </script>
     <script>
         $('.message a').click(function(){$('form').animate({height: "toggle",opacity: "toggle"},"slow");});
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            const loginForm = document.querySelector('.login-form');
+            const registerForm = document.querySelector('.register-form');
+            const loginButton = loginForm.querySelector('button');
+            const registerButton = registerForm.querySelector('button');
+
+            loginButton.addEventListener('click', function(event) {
+            event.preventDefault();
+            const username = loginForm.querySelector('input[type="text"]').value;
+            const password = loginForm.querySelector('input[type="password"]').value;
+
+            if (!username || !password) {
+                alert('Please fill out all fields in the login form');
+            } else {
+                // Perform login action
+            }
+            });
+
+         
+            });
+            registerButton.addEventListener('click', function(event) {
+            event.preventDefault();
+            const username = registerForm.querySelector('input[name="user name"]').value;
+            const email = registerForm.querySelector('input[name="email-id"]').value;
+            const password = registerForm.querySelector('input[type="password"]').value;
+
+            if (!username || !email || !password) {
+                alert('Please fill out all fields in the register form');
+            } else {
+                // Perform registration action
+            }
+    });
+  
+
     </script>
     
     
 </body>
 </html>
-    
-</body>
-</html>
+
 
 
 
